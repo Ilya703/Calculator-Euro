@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Calculator</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<div class="container"> 
+		<div class="block">
+			<div class="inner-wrapper">
+				<div class="block-inner">
+					<h1>Amount</h1>
+					<div class="inner1">
+						<div class="box1"><h3 id="box1">1</h3></div>
+						<h3>pcs</h3>
+					</div>
+					<div class="inner1">
+						<div class="box2"><h3 id="box2"></h3></div>
+						<h3>€</h3>
+					</div>
+				</div>
+			</div>
+			<input type="range" min="1" max="20" value="1" class="slider-1" oninput="range()">
+			<div class="note-block">
+				<h4 class="note">0.5%<br>increasing<br>rate</h4>
+			</div>
+			<h4 class="note-mobile">0.5% increasing rate</h4>
+			<h1 class="h-text">Period</h1>
+			<div class="slider-box">
+				<div class="items item1">
+					<h4>1 year</h4>
+					<h4>1.5 years</h4>
+					<h4>2 years</h4>
+				</div>
+				<div class="items item2">
+					<div class="line1"></div>
+					<div class="line2"></div>
+					<div class="line3"></div>
+				</div>
+				<input type="range" min="0" max="2" value="2" class="slider" oninput="range()">
+				<div class="items item3">
+					<h4>7%</h4>
+					<h4>8%</h4>
+					<h4>9%</h4>
+				</div>
+			</div>
+		</div>
+		<div class="line"></div>
+		<div class="count">
+			<div class="inner2">
+				<h1>Sum</h1>
+				<h2 class="sum"></h2>
+			</div>
+			<div class="redline"></div>
+			<div class="inner2 redline-top">
+				<h1>Rate</h1>
+				<h2 class="per-cent">9 %</h2>
+			</div>
+			<div class="redline"></div>
+			<div class="greytext">
+				<div class="greyline"></div>
+				<p class="text">Standart rate - 9 %<br>Increasing rate - 0 %</p>
+			</div>
+			<div class="inner2">
+				<h1>Payment per month</h1>
+				<h2 class="total-month"></h2>
+			</div>
+			<div class="redline"></div>
+			<div class="inner3">
+				<h1>Payment per year</h1>
+				<h2 class="total-year"></h2>
+			</div>
+			<div class="redline"></div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/common.js"></script>
+</body>
+</html>
