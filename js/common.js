@@ -74,8 +74,9 @@ const range = () => {
       box1.innerHTML = `${val2}`;
       box2.innerHTML = `${(val2 * booster).toLocaleString()}`;
       sum.innerHTML = `${(val2 * booster).toLocaleString()} €`;
-      upperPerCent = (0.3 * (val2 - 1)).toFixed(1);
-      countPerCent = fixedPerCent + upperPerCent;
+      upperPerCent = Number((0.3 * (val2 - 1)).toFixed(1));
+      countPerCent = upperPerCent + fixedPerCent;
+      console.log(0.3 + 5);
       perCent.innerHTML = `${countPerCent} %`;
       note.innerHTML = `${upperPerCent}%<br>Increasing<br>rate`;
       text.innerHTML = `Standart rate - ${fixedPerCent} %<br>Increasing rate - ${upperPerCent} %`;
