@@ -7,7 +7,6 @@ const box2 = document.getElementById('box2');
 const text = document.querySelector('.text');
 const note = document.querySelector('.note');
 const noteMobile = document.querySelector('.note-mobile');
-const sum = document.querySelector('.sum');
 const perCent = document.querySelector('.per-cent');
 let euro = 83.11;
 let booster = Math.ceil(350000 / euro);
@@ -18,7 +17,6 @@ let countPerCent = 9;
 let total = Math.ceil((amount * 0.01 * countPerCent) / 12);
 totalMonth.innerHTML = `${total.toLocaleString()} €`;
 totalYear.innerHTML = `${(total * 12).toLocaleString()} €`;
-sum.innerHTML = `${(amount).toLocaleString()} €`;
 box2.innerHTML = `${(amount).toLocaleString()}`;
 const range = () => {
   let val1 = slider1.value;
@@ -61,7 +59,6 @@ const range = () => {
       perCent.innerHTML = `${countPerCent} %`;
       box1.innerHTML = `${val2}`;
       box2.innerHTML = `${(val2 * booster).toLocaleString()}`;
-      sum.innerHTML = `${(val2 * booster).toLocaleString()} €`;
       amount = val2 * booster;
       total = Math.ceil((amount * 0.01 * countPerCent) / 12);
       totalMonth.innerHTML = `${total.toLocaleString()} €`;
@@ -73,7 +70,6 @@ const range = () => {
     case val2 <= 11:
       box1.innerHTML = `${val2}`;
       box2.innerHTML = `${(val2 * booster).toLocaleString()}`;
-      sum.innerHTML = `${(val2 * booster).toLocaleString()} €`;
       upperPerCent = Number((0.3 * (val2 - 1)).toFixed(1));
       countPerCent = upperPerCent + fixedPerCent;
       console.log(0.3 + 5);
@@ -93,7 +89,6 @@ const range = () => {
     case (val2 > 11) && (val2 < 20):
       box1.innerHTML = `${val2}`;
       box2.innerHTML = `${(val2 * booster).toLocaleString()}`;
-      sum.innerHTML = `${(val2 * booster).toLocaleString()} €`;
       upperPerCent = 3;
       countPerCent = fixedPerCent + upperPerCent;
       perCent.innerHTML = `${countPerCent} %`;
@@ -112,7 +107,6 @@ const range = () => {
     case val2 == 20:
       box1.innerHTML = `${val2}`;
       box2.innerHTML = `${(val2 * booster).toLocaleString()}`;
-      sum.innerHTML = `${(val2 * booster).toLocaleString()} €`;
       upperPerCent = 3;
       countPerCent = fixedPerCent + upperPerCent;
       perCent.innerHTML = `${countPerCent} %`;
