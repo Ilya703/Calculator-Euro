@@ -83,7 +83,7 @@ const range = () => {
       total = Math.ceil((amount * 0.01 * countPerCent) / 12);
       totalMonth.innerHTML = `${total.toLocaleString()} €`;
       totalYear.innerHTML = `${(total * 12).toLocaleString()} €`;
-      note.style.marginLeft = `${val2*16 - 36}px`;
+      note.style.marginLeft = `${val2*16 - 26}px`;
       val2 = val2 * 4.9;
       break;
     case (val2 > 11) && (val2 < 20):
@@ -101,7 +101,7 @@ const range = () => {
       total = Math.ceil((amount * 0.01 * countPerCent) / 12);
       totalMonth.innerHTML = `${total.toLocaleString()} €`;
       totalYear.innerHTML = `${(total * 12).toLocaleString()} €`;
-      note.style.marginLeft = `${val2*16 - 36}px`;
+      note.style.marginLeft = `${val2*16 - 26}px`;
       val2 = val2 * 4.9;
       break;
     case val2 == 20:
@@ -119,7 +119,7 @@ const range = () => {
       total = Math.ceil((amount * 0.01 * countPerCent) / 12);
       totalMonth.innerHTML = `${total.toLocaleString()} €`;
       totalYear.innerHTML = `${(total * 12).toLocaleString()} €`;
-      note.style.marginLeft = `${val2*16 - 36}px`;
+      note.style.marginLeft = `${val2*16 - 26}px`;
       val2 = 100;
       break;
   };
