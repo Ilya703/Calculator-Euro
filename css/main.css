@@ -134,7 +134,7 @@ h4{
     background: #FE3D3D;
 }
 .redline-top{
-    margin-top: 46px;
+    margin-top: 26px;
 }
 .greyline{
     height: 46px;
@@ -169,7 +169,7 @@ h4{
 }
 .block-inner{
     display: flex;
-    margin-top: 40px;
+    margin-top: 20px;
     margin-left: 10px;
     align-items: baseline;
 }
@@ -181,7 +181,7 @@ h4{
     height: 340px;
     width: 2px;
     background: #c3bfbf;
-    margin: 20px 30px 0 30px;
+    margin: 0 30px;
 }
 .inner-wrapper{
     width: fit-content;
