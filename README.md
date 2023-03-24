@@ -1,5 +1,29 @@
-# Calculator in euro
+# Calculator in euro 💶
 
-## The project was made on JavaScript for Siberia Tech
+The calculator in euro is a freelance application developed for Sibera Tech company. It provides a calculator specifically designed for working with euro
 
-https://ilya703.github.io/Calculator-Euro/
+### 🌐 [Site deployment](https://ilya703.github.io/Calculator-Euro/)
+
+### 🚀 Installation
+
+1. Clone the repository:
+
+```cmd
+git clone https://github.com/Ilya703/Calculator-Euro.git
+```
+
+2. Start the application:
+
+```cmd
+Just open index.html file in your browser
+```
+
+### 🛠️ Built With:
+
+* HTML5
+* CSS3
+* JavaScript
+
+
+
+
